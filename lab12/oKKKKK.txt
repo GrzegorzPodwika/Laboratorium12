@@ -1,0 +1,5 @@
+                      Nazwa metody Dlugosc tablicy                     Rodzaj tablicy Liczba porownan Liczba przestawien 
+                     Cocktail sort            15       Tablica z losowymi liczbami            61            37
+                     Cocktail sort            15       Tablica posortowana rosn¹ca            14             0
+                     Cocktail sort            15      Tablica posortowana malej¹co           105           104
+                     Cocktail sort            15   Tablica czêsciowo uporz¹dkowana            35            16

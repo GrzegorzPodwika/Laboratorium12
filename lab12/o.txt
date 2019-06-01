@@ -1,0 +1,5 @@
+ Nazwa metody               Dlugosc tablicy                Rodzaj tablicy               Liczba porownan            Liczba przestawien 
+Quicksort - Lomuto                           100   Tablica z losowymi liczbami                           612                           325
+Quicksort - Lomuto                           100   Tablica posortowana rosn¹ca                           480                           285
+Quicksort - Lomuto                           100  Tablica posortowana malej¹co                           513                           331
+Quicksort - Lomuto                           100Tablica czêsciowo uporz¹dkowana                           544                           340

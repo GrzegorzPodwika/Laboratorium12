@@ -1,0 +1,5 @@
+Nazwa metody               Dlugosc tablicy                Rodzaj tablicy               Liczba porownan            Liczba przestawien 
+Cocktail sort                           100   Tablica z losowymi liczbami                          3417                          2371
+Cocktail sort                           100   Tablica posortowana rosn¹ca                            99                             0
+Cocktail sort                           100  Tablica posortowana malej¹co                          4950                          4948
+Cocktail sort                           100Tablica czêsciowo uporz¹dkowana                           847                           668

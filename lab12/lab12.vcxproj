@@ -115,6 +115,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CSortTablicy.cpp" />
+    <ClCompile Include="CTablica.cpp" />
+    <ClCompile Include="libExceptions.cpp" />
+    <ClCompile Include="source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSortTablicy.h" />
+    <ClInclude Include="CTablica.h" />
+    <ClInclude Include="libExceptions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
