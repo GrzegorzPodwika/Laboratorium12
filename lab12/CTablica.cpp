@@ -1,10 +1,9 @@
 #include "CTablica.h"
-#include <iostream>
-#include <algorithm>
+
 using namespace std;
 
 
-void CTablica::heapify(int* Tab, int heap_size, int i, int& numberOfComparisons, int& numberOfInversions)
+void CTablica::heapify(int* Tab, int heap_size, int i, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions)
 {
 	//zmienne pomocnicze
 	int largest{}, temp{};
@@ -40,7 +39,7 @@ void CTablica::heapify(int* Tab, int heap_size, int i, int& numberOfComparisons,
 }
 
 
-void CTablica::buildHeap(int* Tab, int heap_size, int& numberOfComparisons, int& numberOfInversions)
+void CTablica::buildHeap(int* Tab, int heap_size, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions)
 {
 	//od ostatniego rodzica do zerowego rodzica (korzenia) wywolanie procedury heapify
 	for (int i = heap_size / 2 - 1; i >= 0; i--)
@@ -56,7 +55,7 @@ void CTablica::swap(int & a, int & b)
 }
 
 
-int CTablica::Lomuto_Quicksort(int* Tab, int low, int top, int &numberOfComparisons, int &numberOfInversions)
+int CTablica::Lomuto_Quicksort(int* Tab, int low, int top, unsigned long long &numberOfComparisons, unsigned long long &numberOfInversions)
 {
 	if (low >= top) return 0;			//jeœli tablica jest jednoelementowa -> powróæ
 
@@ -84,7 +83,7 @@ int CTablica::Lomuto_Quicksort(int* Tab, int low, int top, int &numberOfComparis
 }
 
 
-void CTablica::HeapSort(int* Tab, int heap_size, int &numberOfComparisons, int &numberOfInversions)
+void CTablica::HeapSort(int* Tab, int heap_size, unsigned long long &numberOfComparisons, unsigned long long &numberOfInversions)
 {
 	//stworzenie z tablicy kopca
 	buildHeap(Tab, heap_size, numberOfComparisons, numberOfInversions);
@@ -102,7 +101,7 @@ void CTablica::HeapSort(int* Tab, int heap_size, int &numberOfComparisons, int &
 }
 
 
-int CTablica::Hoare_Quicksort(int* Tab, int low, int top, int& numberOfComparisons, int& numberOfInversions)
+int CTablica::Hoare_Quicksort(int* Tab, int low, int top, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions)
 {
 	if (low >= top) return 0;			//jeœli tablica jest jednoelementowa -> powróæ
 
@@ -138,7 +137,7 @@ int CTablica::Hoare_Quicksort(int* Tab, int low, int top, int& numberOfCompariso
 }
 
 
-void CTablica::cocktailSort(int * Tab, int size, int& numberOfComparisons, int& numberOfInversions)
+void CTablica::cocktailSort(int * Tab, int size, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions)
 {
 
 	int bottom{};

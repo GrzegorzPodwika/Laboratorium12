@@ -16,7 +16,7 @@ protected:
 	@param numberOfComparisons liczba porownan do zliczania
 	@param numberOfInversions liczba zamian do zliczania
 	*/
-	void heapify(int* Tab, int heap_size, int i, int& numberOfComparisons, int& numberOfInversions);
+	void heapify(int* Tab, int heap_size, int i, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions);
 
 	/*
 	Metoda rekursywna budujaca kopiec za pomoca heapify
@@ -25,7 +25,7 @@ protected:
 	@param numberOfComparisons liczba porownan do zliczania
 	@param numberOfInversions liczba zamian do zliczania
 	*/
-	void buildHeap(int* Tab, int heap_size, int& numberOfComparisons, int& numberOfInversions);
+	void buildHeap(int* Tab, int heap_size, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions);
 
 	/*
 	Metoda pomocnicza przypisujaca a=b i b=a
@@ -48,7 +48,7 @@ public:
 	@param numberOfInversions liczba zamian do zliczania
 	*/
 
-	int Lomuto_Quicksort(int* Tab, int low, int top, int &numberOfComparisons, int &numberOfInversions);
+	int Lomuto_Quicksort(int* Tab, int low, int top, unsigned long long &numberOfComparisons, unsigned long long &numberOfInversions);
 
 	/*
 	Metoda sortujaca dane za pomoca kopca
@@ -57,7 +57,7 @@ public:
 	@param numberOfComparisons liczba porownan do zliczania
 	@param numberOfInversions liczba zamian do zliczania	
 	*/
-	void HeapSort(int* Tab, int heap_size, int& numberOfComparisons, int& numberOfInversions);
+	void HeapSort(int* Tab, int heap_size, unsigned long long& numberOfComparisons, unsigned long long& numberOfInversions);
 
 	
 	/*
@@ -69,7 +69,7 @@ public:
 	@param numberOfInversions liczba zamian do zliczania
 	*/
 
-	int Hoare_Quicksort(int* Tab, int low, int top, int &numberOfComparisons, int &numberOfInversions);
+	int Hoare_Quicksort(int* Tab, int low, int top, unsigned long long &numberOfComparisons, unsigned long long &numberOfInversions);
 
 	/*
 	Metoda sortujaca dane algorytmem babelkowym dwukierunkowym
@@ -78,7 +78,7 @@ public:
 	@param numberOfComparisons liczba porownan do zliczania
 	@param numberOfInversions liczba zamian do zliczania
 	*/
-	void cocktailSort(int* Tab, int size, int& numberOfComparisons, int& numberOfInversions);
+	void cocktailSort(int* Tab, int size, unsigned long long& numberOfComparisons, unsigned long long & numberOfInversions);
 
 	//destruktor
 	~CTablica(void);

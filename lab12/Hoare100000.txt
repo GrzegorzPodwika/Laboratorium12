@@ -1,0 +1,5 @@
+        Nazwa metody     Dlugosc tablicy                          Rodzaj tablicy     Liczba porownan  Liczba przestawien
+ Quicksort - Hoare'a              100000             Tablica z losowymi liczbami             1459074              411491
+ Quicksort - Hoare'a              100000             Tablica posortowana rosn¹ca             1470506               66091
+ Quicksort - Hoare'a              100000            Tablica posortowana malej¹co             1370511              116092
+ Quicksort - Hoare'a              100000         Tablica czêsciowo uporz¹dkowana             1396477              123124

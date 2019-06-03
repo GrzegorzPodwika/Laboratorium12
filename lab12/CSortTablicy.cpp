@@ -101,7 +101,7 @@ void CSortTablicy::openFile()
 		throw MyRuntimeExceptions::FileOpenException("Nie mozna otworzyc pliku wejsciowego");
 	}
 
-	outFile << setw(20) << "Nazwa metody" << setw(20) << "Dlugosc tablicy" << setw(40) << "Rodzaj tablicy" << setw(20) << "Liczba porownan" << setw(20) << "Liczba przestawien" << endl;
+	outFile << setw(20) << "Nazwa metody" << setw(20) << "Dlugosc tablicy" << setw(40) << "Rodzaj tablicy" << setw(30) << "Liczba porownan" << setw(30) << "Liczba przestawien" << endl;
 }
 
 
@@ -340,9 +340,9 @@ void CSortTablicy::showSortMethodsInAction()
 }
 
 
-void CSortTablicy::saveDataToFile(string nameOfMethod, int size, string typeOfTable, int numberOfComparisons, int numberOfInversions)
+void CSortTablicy::saveDataToFile(string nameOfMethod, int size, string typeOfTable, unsigned long long numberOfComparisons, unsigned long long numberOfInversions)
 {
-	outFile << setw(20) << nameOfMethod << setw(20) << size << setw(40) << typeOfTable << setw(20) << numberOfComparisons << setw(20) << numberOfInversions << endl;
+	outFile << setw(20) << nameOfMethod << setw(20) << size << setw(40) << typeOfTable << setw(30) << numberOfComparisons << setw(30) << numberOfInversions << endl;
 }
 
 

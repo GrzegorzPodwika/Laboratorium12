@@ -16,8 +16,8 @@ class CSortTablicy :public CTablica
 	int *Tab;
 	int low;
 	int top;
-	int numberOfComparisons;
-	int numberOfInversions;
+	unsigned long long numberOfComparisons;
+	unsigned long long numberOfInversions;
 	std::fstream outFile;
 
 public:
@@ -68,7 +68,7 @@ public:
 	@param numberOfComparisons liczba zliczonych porownan 
 	@param numberOfInversions liczba zliczonych przypisan
 	*/
-	void saveDataToFile(std::string nameOfMethod, int size, std::string typeOfTable, int numberOfComparisons, int numberOfInversions);
+	void saveDataToFile(std::string nameOfMethod, int size, std::string typeOfTable, unsigned long long numberOfComparisons, unsigned long long numberOfInversions);
 
 	/*
 	Metoda mieszajaca niektore wartosci w tablicy, w naszym przypadku 10%

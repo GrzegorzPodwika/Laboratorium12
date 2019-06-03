@@ -1,0 +1,5 @@
+        Nazwa metody     Dlugosc tablicy                          Rodzaj tablicy               Liczba porownan            Liczba przestawien
+ Quicksort - Hoare'a                 100             Tablica z losowymi liczbami                           456                           178
+ Quicksort - Hoare'a                 100             Tablica posortowana rosn¹ca                           482                            63
+ Quicksort - Hoare'a                 100            Tablica posortowana malej¹co                           384                           113
+ Quicksort - Hoare'a                 100         Tablica czêsciowo uporz¹dkowana                           474                            76

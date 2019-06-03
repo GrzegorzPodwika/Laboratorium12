@@ -1,0 +1,5 @@
+        Nazwa metody     Dlugosc tablicy                          Rodzaj tablicy               Liczba porownan            Liczba przestawien
+       Cocktail sort                1000             Tablica z losowymi liczbami                        336062                        252037
+       Cocktail sort                1000             Tablica posortowana rosn¹ca                           999                             0
+       Cocktail sort                1000            Tablica posortowana malej¹co                        499500                        499453
+       Cocktail sort                1000         Tablica czêsciowo uporz¹dkowana                         67901                         63331
