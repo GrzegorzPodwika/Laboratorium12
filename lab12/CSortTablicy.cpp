@@ -235,10 +235,12 @@ void CSortTablicy::showSortMethodsInAction()
 		saveDataToFile("Cocktail sort", top, "Tablica z losowymi liczbami", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
 
+
 		//2 przypadek z posortowana tablica
 		cocktailSort(Tab, top, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Cocktail sort", top, "Tablica posortowana rosn¹ca", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//3 przypadek z tablica posortowana malejaco
 		reverse(Tab, Tab + top);
@@ -246,11 +248,11 @@ void CSortTablicy::showSortMethodsInAction()
 		saveDataToFile("Cocktail sort", top, "Tablica posortowana malej¹co", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
 
+
 		//4 przypadek z tablica czesciowo nieuporzadkowana
 		shakeTable(Tab, top);
 		cocktailSort(Tab, top, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Cocktail sort", top, "Tablica czêsciowo uporz¹dkowana", numberOfComparisons, numberOfInversions);
-
 	}
 	break;
 
@@ -261,16 +263,19 @@ void CSortTablicy::showSortMethodsInAction()
 		saveDataToFile("Quicksort - Lomuto", top, "Tablica z losowymi liczbami", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
 
+
 		//2 przypadek z posortowana tablica
 		Lomuto_Quicksort(Tab, low, top - 1, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Quicksort - Lomuto", top, "Tablica posortowana rosn¹ca", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//3 przypadek z tablica posortowana malejaco
 		reverse(Tab, Tab + top);
 		Lomuto_Quicksort(Tab, low, top - 1, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Quicksort - Lomuto", top, "Tablica posortowana malej¹co", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//4 przypadek z tablica czesciowo nieuporzadkowana
 		shakeTable(Tab, top);
@@ -286,16 +291,19 @@ void CSortTablicy::showSortMethodsInAction()
 		saveDataToFile("Quicksort - Hoare'a", top, "Tablica z losowymi liczbami", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
 
+
 		//2 przypadek z posortowana tablica
 		Hoare_Quicksort(Tab, low, top-1, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Quicksort - Hoare'a", top, "Tablica posortowana rosn¹ca", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//3 przypadek z tablica posortowana malejaco
 		reverse(Tab, Tab + top);
 		Hoare_Quicksort(Tab, low, top-1, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Quicksort - Hoare'a", top, "Tablica posortowana malej¹co", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//4 przypadek z tablica czesciowo nieuporzadkowana
 		shakeTable(Tab, top);
@@ -309,18 +317,21 @@ void CSortTablicy::showSortMethodsInAction()
 		//1 przypadek z losowymi wartosciami
 		HeapSort(Tab, top, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Heapsort", top, "Tablica z losowymi liczbami", numberOfComparisons, numberOfInversions);
-		resetNumberOfComparisonsAndInversions();
+		resetNumberOfComparisonsAndInversions();\
+
 
 		//2 przypadek z posortowana tablica
 		HeapSort(Tab, top, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Heapsort", top, "Tablica posortowana rosn¹ca", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
 
+
 		//3 przypadek z tablica posortowana malejaco
 		reverse(Tab, Tab + top);
 		HeapSort(Tab, top, numberOfComparisons, numberOfInversions);
 		saveDataToFile("Heapsort", top, "Tablica posortowana malej¹co", numberOfComparisons, numberOfInversions);
 		resetNumberOfComparisonsAndInversions();
+
 
 		//4 przypadek z tablica czesciowo nieuporzadkowana
 		shakeTable(Tab, top);
@@ -335,6 +346,8 @@ void CSortTablicy::showSortMethodsInAction()
 		break;
 	}
 
+	getchar();
+	getchar();
 	outFile.close();
 	delete[] Tab;
 }

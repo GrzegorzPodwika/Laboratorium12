@@ -17,14 +17,14 @@ void CTablica::heapify(int* Tab, int heap_size, int i, unsigned long long& numbe
 	else
 		largest = i;
 
-	numberOfComparisons += 2;
+	numberOfComparisons++;
 
 	//jesli istnieje prawe dziecko i-rodzica oraz wartosc prawego dziecka jest wieksza od wartosci lewego dziecka(lub i-rodzica)
 	//to przypisujemy do largest index prawego dziecka
 	if (rightChild < heap_size && Tab[rightChild] > Tab[largest])
 		largest = rightChild;
 
-	numberOfComparisons += 2;
+	numberOfComparisons++;
 
 	//jesli largest nie jest indexem i-rodzica
 	if (largest != i)

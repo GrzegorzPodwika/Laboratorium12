@@ -1,0 +1,5 @@
+        Nazwa metody     Dlugosc tablicy                          Rodzaj tablicy               Liczba porownan            Liczba przestawien
+            Heapsort              100000             Tablica z losowymi liczbami                       3249544                       1574772
+            Heapsort              100000             Tablica posortowana rosn¹ca                       3399646                       1649823
+            Heapsort              100000            Tablica posortowana malej¹co                       3094894                       1497447
+            Heapsort              100000         Tablica czêsciowo uporz¹dkowana                       3371292                       1635646
